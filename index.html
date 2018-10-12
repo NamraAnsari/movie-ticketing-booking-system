@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="container group">
+            <div class="head-area group">
+                <div class="right-area">
+                    <input type="search" placeholder="Search Movies" name="searchMovie">
+
+                    </div>
+                    <div class="left-area">
+                        <div class="hide-icon">
+                            <button onclick="displayMenu">
+                                <img src="images/menu-icon.jpg" alt="Menu">
+                            </button>
+                        </div>
+                        <nav class="user_register">
+                            <ul class="group">
+                                <li><a href="index.html"><img src="images/home-icon.jpg" alt="Home"></a></li>
+                                <li><button onclick="openForm2()">Sign Up</a></li>
+                                <li><button onclick="openForm1()">Log In</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <div class="container">
+        <div class="right-area">
+            <nav class="movie">
+                <ul class="group">
+                            <li>
+                                <a id="allMovies">All Movies</a>
+                            </li>
+                            <li>
+                                <a id="nowShowing">Now Showing</a>
+                            </li>
+                            <li>
+                                <a id="comingSoon">Coming Soon</a>
+                            </li>
+                            <li>
+                                <a id="highRated">Highest Rated</a>
+                            </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="left-area">
+            <div class="form-popup" id="myForm1">
+                <form class="form-container">
+                    <div class="cancelbtn" onclick="closeForm1()">X</div>
+                    <label for="user-name">Username:</label>
+                    <input type="email" id="user-name" name="userName" placeholder="Username" required>
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="pwd" name="password" placeholder="Password" required>
+                    <input type="submit" value="Log In">
+                    <p>New User? <button onclick="closeForm1(), openForm2()">Sign Up</button></p>
+                                    </form>
+                    </div>
+                    <div class="form-popup" id="myForm2">
+                        <form class="form-container">
+                            <div class="cancelbtn" onclick="closeForm2()">X</div>
+                            <label for="user-name">Email ID:</label>
+                            <input type="email" id="user-name" name="userName" placeholder="Email" required>
+                            <label for="pwd">Password:</label>
+                            <input type="password" id="pwd" name="password" placeholder="Password" required>
+                            <label for="re-pwd">Retype Password:</label>
+                            <input type="password" id="re-pwd" name="confPwd" placeholder="Retype Password" required>
+                            <input type="submit" value="Create Account">
+            </form>
+                    </div>
+                    <select name="langPrefer" id="lang_prefer">
+                    <option selected disabled>Genre</option>
+                    <option value="allGenre">All Genre</option>
+                    <option value="drama">Drama</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="thrill">Thriller</option>
+                    <option value="horror">Horror</option>
+            </select>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="movie-select">
+                <div class="img-content">
+                    <img src="images/sui-dhaga.jpg" alt="Sui Dhaga">
+                </div>
+                <div class="img-desc">
+                    <p>Sui Dhaga</p>
+                    <a href="booking-page.html">Book Now</a>
+                </div>
+            </div>
+            <div class="movie-select">
+                <div class="img-content">
+                    <img src="images/manto.jpeg" alt="Manto">
+                </div>
+                <div class="img-desc">
+                    <p>Manto</p>
+                    <a href="booking-page.html">Book Now</a>
+                </div>
+            </div>
+            <div class="movie-select">
+                <div class="img-content">
+                    <img src="images/manmarziyan.jpeg" alt="Manmarziyan">
+                </div>
+                <div class="img-desc">
+                    <p>Manmarziyan</p>
+                    <a href="booking-page.html">Book Now</a>
+                </div>
+            </div>
+            <div class="movie-select">
+                <div class="img-content">
+                    <img src="images/mitron.jpg" alt="Mitron">
+                </div>
+                <div class="img-desc">
+                    <p>Mitron</p>
+                    <a href="booking-page.html">Book Now</a>
+                </div>
+            </div>
+            <div class="movie-select">
+                <div class="img-content">
+                    <img src="images/predator.jpg" alt="Predator">
+                </div>
+                <div class="img-desc">
+                    <p>Predator</p>
+                    <a href="booking-page.html">Book Now</a>
+                </div>
+            </div>
+            <div class="movie-select">
+                <div class="img-content">
+                    <img src="images/the-nun.jpeg" alt="The Nun">
+                </div>
+                <div class="img-desc">
+                    <p>The Nun</p>
+                    <a href="booking-page.html">Book Now</a>
+                </div>
+            </div>
+
+            <div class="movie-select">
+                <div class="img-content">
+                    <img src="images/savita-damodar-parajape.jpeg" alt="Savita Damodar Parajape">
+
+                </div>
+                <div class="img-desc">
+                    <p>Savita Damodar Parajape</p>
+                    <a href="booking-page.html">Book Now</a>
+                </div>
+            </div>
+
+            <div class="movie-select">
+                <div class="img-content">
+                    <img src="images/stree.jpeg" alt="Stree">
+                </div>
+                <div class="img-desc">
+                    <p>Stree</p>
+                    <a href="booking-page.html">Book Now</a>
+                </div>
+            </div>
+
+            <div class="movie-select">
+                <div class="img-content">
+                    <img src="images/dostigiri.jpg" alt="Dostigiri">
+                </div>
+                <div class="img-desc">
+                    <p>Dostigiri</p>
+                    <a href="booking-page.html">Book Now</a>
+                </div>
+            </div>
+            <div class="movie-select">
+                <div class="img-content">
+                    <img src="images/genius.jpg" alt="Genius">
+                </div>
+                <div class="img-desc">
+                    <p>Genius</p>
+                    <a href="booking-page.html">Book Now</a>
+                </div>
+            </div>
+
+            <div class="movie-select">
+                <div class="img-content">
+                    <img src="images/gold.jpeg" alt="Gold">
+                </div>
+                <div class="img-desc">
+                    <p>Gold</p>
+                    <a href="booking-page.html">Book Now</a>
+                </div>
+            </div>
+
+            <div class="movie-select">
+                <div class="img-content">
+                    <img src="images/satyameva-jayate.jpg" alt="Satyameva Jayate">
+                </div>
+                <div class="img-desc">
+                    <p>Satyameva Jayate</p>
+                    <a href="booking-page.html">Book Now</a>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <p>good bye</p>
+        </footer>
+        <script type="text/javascript" src="js/myScript.js"></script>
+</body>
+
+</html>
