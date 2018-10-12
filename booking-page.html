@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="container group">
+            <div class="head-area group">
+                <div class="right-area">
+                    <input type="search" placeholder="Search Movies" name="searchMovie">
+
+                    </div>
+                    <div class="left-area">
+                        <div class="hide-icon">
+                            <button onclick="displayMenu">
+                                <img src="images/menu-icon.jpg" alt="Menu">
+                            </button>
+                        </div>
+                        <nav class="user_register">
+                            <ul class="group">
+                                <li><a href="index.html"><img src="images/home-icon.jpg" alt="Home"></a></li>
+                                <li><button onclick="openForm2()">Sign Up</a></li>
+                                <li><button onclick="openForm1()">Log In</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <body>
+        <div class="left-area">
+            <div class="form-popup" id="myForm1">
+                <form class="form-container">
+                    <div class="cancelbtn" onclick="closeForm1()">X</div>
+                    <label for="user-name">Username:</label>
+                    <input type="email" id="user-name" name="userName" placeholder="Username" required>
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="pwd" name="password" placeholder="Password" required>
+                    <input type="submit" value="Log In">
+                    <p>New User? <button onclick="closeForm1(), openForm2()">Sign Up</button></p>
+                                    </form>
+                    </div>
+                    <div class="form-popup" id="myForm2">
+                        <form class="form-container">
+                            <div class="cancelbtn" onclick="closeForm2()">X</div>
+                            <label for="user-name">Email ID:</label>
+                            <input type="email" id="user-name" name="userName" placeholder="Email" required>
+                            <label for="pwd">Password:</label>
+                            <input type="password" id="pwd" name="password" placeholder="Password" required>
+                            <label for="re-pwd">Retype Password:</label>
+                            <input type="password" id="re-pwd" name="confPwd" placeholder="Retype Password" required>
+                            <input type="submit" value="Create Account">
+            </form>
+                    </div>
+                        <form action="" class="form-container">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name">
+
+            </form>
+                </div>
+                <script type="text/javascript" src="js/myScript.js"></script>
+</body>
+
+</html>
